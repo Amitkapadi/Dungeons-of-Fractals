@@ -14,6 +14,7 @@ GameObject:
   - 54: {fileID: 5400000}
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400002}
+  - 114: {fileID: 11472284}
   m_Layer: 9
   m_Name: RollerBall
   m_TagString: Player
@@ -28,8 +29,9 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.40025711, y: -3.13121223, z: -.992190003}
+  m_LocalPosition: {x: 5.400257, y: -3.1312122, z: -0.99219}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -51,8 +53,10 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_AutoUVMaxDistance: .5
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
@@ -72,7 +76,7 @@ Rigidbody:
   m_GameObject: {fileID: 100000}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: .100000001
+  m_Drag: 0.1
   m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -105,6 +109,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daa7e0829bc72c94babd728cc0466196, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11472284
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 117
+    i1: 62
+    i2: 169
+    i3: 204
+    i4: 249
+    i5: 238
+    i6: 230
+    i7: 196
+    i8: 42
+    i9: 9
+    i10: 84
+    i11: 236
+    i12: 134
+    i13: 99
+    i14: 185
+    i15: 146
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 1
 --- !u!135 &13500000
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -115,7 +151,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: .5
+  m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &100100000
 Prefab:

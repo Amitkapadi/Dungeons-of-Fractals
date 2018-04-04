@@ -47,8 +47,8 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Clicktomove.cs" />
      <Compile Include="Assets\Scripts\Isometrycamera.cs" />
-     <Compile Include="Assets\Scripts\Mainmenu.cs" />
-     <Compile Include="Assets\Scripts\Mainmenu2.cs" />
+     <Compile Include="Assets\Scripts\Menu.cs" />
+     <Compile Include="Assets\Scripts\NetworkManagerHUD.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />

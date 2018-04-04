@@ -1,9 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-//Это говн оработает,не совсем правильно кончено но работает
-
-
 public class Clicktomove : MonoBehaviour
 {
     private Transform myTransform;              // this transform
