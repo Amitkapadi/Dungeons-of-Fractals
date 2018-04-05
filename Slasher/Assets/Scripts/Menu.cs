@@ -6,6 +6,7 @@ public class Menu : MonoBehaviour
     public GameObject buttonsMenu;
     public GameObject buttonsExit;
     public GameObject AboutUsButtons;
+    public GameObject Settings;
 
     public void ShowExitButtons()
     {
@@ -43,6 +44,15 @@ public class Menu : MonoBehaviour
         AboutUsButtons.SetActive(false);
     }
 
+    public void ShowSettings()
+    {
+        buttonsMenu.SetActive(false);
+        Settings.SetActive(true);
+    }
 
-
+    public void BackInMenuSettings()
+    {
+        buttonsMenu.SetActive(true);
+        Settings.SetActive(false);
+    }
 }
