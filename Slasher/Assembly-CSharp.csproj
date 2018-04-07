@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Clicktomove.cs" />
      <Compile Include="Assets\Scripts\Isometrycamera.cs" />
+     <Compile Include="Assets\Scripts\LoadingScreen.cs" />
      <Compile Include="Assets\Scripts\Menu.cs" />
      <Compile Include="Assets\Scripts\NetworkManagerHUD.cs" />
      <Compile Include="Assets\Scripts\PlayerGUI.cs" />

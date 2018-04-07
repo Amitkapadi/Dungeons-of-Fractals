@@ -7,6 +7,7 @@ public class Menu : MonoBehaviour
     public GameObject buttonsExit;
     public GameObject AboutUsButtons;
     public GameObject Settings;
+    public GameObject LoadingScreen;
 
     public void ShowExitButtons()
     {
@@ -27,7 +28,8 @@ public class Menu : MonoBehaviour
 
     public void NewGameLoadScene()
     {
-        Application.LoadLevel(1);
+        buttonsMenu.SetActive(false);
+        LoadingScreen.SetActive(true);
     }
 
     //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
