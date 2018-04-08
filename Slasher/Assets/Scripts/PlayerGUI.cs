@@ -6,9 +6,22 @@ public class PlayerGUI : MonoBehaviour
     public GameObject Player;
     public GameObject Menu;
     public GameObject SettingsButton;
+    public GameObject Saves;
     public bool Paused = false;
     //public void Condition=;
-    
+
+    public void openSaves()//Открытие меню сохранения
+    {
+        Menu.SetActive(false);
+        Saves.SetActive(true);
+    }
+
+    public void CloseSaves()//Закрытие меню сохранения
+    {
+        Saves.SetActive(false);
+        Menu.SetActive(true);
+    } 
+
 
     void Update()//Для паузы через escape
     {

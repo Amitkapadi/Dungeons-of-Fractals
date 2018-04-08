@@ -8,6 +8,14 @@ public class Menu : MonoBehaviour
     public GameObject AboutUsButtons;
     public GameObject Settings;
     public GameObject LoadingScreen;
+    public GameObject LoadGame;
+
+    public void LoadingSaveGame()
+    {
+        buttonsMenu.SetActive(false);
+        LoadingScreen.SetActive(true);
+    } 
+
 
     public void ShowExitButtons()
     {

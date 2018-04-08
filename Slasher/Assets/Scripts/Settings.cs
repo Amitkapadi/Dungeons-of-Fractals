@@ -6,11 +6,9 @@ using UnityEngine.UI;
 public class Settings : MonoBehaviour
 {
     public Slider MainVolume;
-
     public void VolumeMainChange()
     {
         AudioListener.volume=MainVolume.value;
-
     }
 
     public void Resolution(int r)//Разрешение
