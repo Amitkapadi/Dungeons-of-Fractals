@@ -7,8 +7,8 @@ public class PlayerGUI : MonoBehaviour
     public GameObject Menu;
     public GameObject SettingsButton;
     public GameObject Saves;
+    public GameObject СonfirmationExit;
     public bool Paused = false;
-    //public void Condition=;
 
     public void openSaves()//Открытие меню сохранения
     {
@@ -20,12 +20,11 @@ public class PlayerGUI : MonoBehaviour
     {
         Saves.SetActive(false);
         Menu.SetActive(true);
-    } 
-
+    }
 
     void Update()//Для паузы через escape
     {
-       
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (Paused == false)
@@ -50,20 +49,40 @@ public class PlayerGUI : MonoBehaviour
         Time.timeScale = 1;
     }
 
-
-
-    public void EixtToMainMenu()//Выход в главное меню
+    public void СonfirmationYesMainMenu()//Выходим если да
     {
-        Menu.SetActive(false);
         Application.LoadLevel(1);
         Time.timeScale = 1;
         Paused = false;
     }
 
+    public void СonfirmationNoMainMenu()//Идём в сейв если нет
+    {
+        СonfirmationExit.SetActive(false);
+        Saves.SetActive(true);
+    }
+
+    public void EixtToMainMenu()//Выход в главное меню
+    {
+        Menu.SetActive(false);
+        СonfirmationExit.SetActive(true);
+    }
+
+    public void СonfirmationYesQuitGame()
+    {
+        Application.Quit();
+    }
+
+    public void СonfirmationNoQuitGame()
+    {
+        СonfirmationExit.SetActive(false);
+        Saves.SetActive(true);
+    }
+
     public void ExitFromGame()//Выход из игры
     {
         Menu.SetActive(false);
-        Application.Quit();
+        СonfirmationExit.SetActive(true);
     }
 
     public void SettingsOn()//Вкладка настроек
