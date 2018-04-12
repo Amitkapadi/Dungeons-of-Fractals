@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Clicktomove.cs" />
+     <Compile Include="Assets\Scripts\CustomNetworkManagerGUI.cs" />
      <Compile Include="Assets\Scripts\Isometrycamera.cs" />
      <Compile Include="Assets\Scripts\LoadSceneFromMenu.cs" />
      <Compile Include="Assets\Scripts\LoadingScreen.cs" />

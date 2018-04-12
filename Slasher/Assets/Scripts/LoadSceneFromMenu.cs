@@ -5,6 +5,7 @@ public class LoadSceneFromMenu : MonoBehaviour
 {
     public bool TrigerToContinueGame=false;
 
+
     public void LoadTriger()
     {
         TrigerToContinueGame = true;

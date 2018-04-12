@@ -9,18 +9,6 @@ public class SaveGameScript : MonoBehaviour
     public GameObject Menu;
     public GameObject SucesfullSaving;
     public GameObject SavingMenu;
-    public GameObject SaveScene;
-    public bool TrigerToContinueGame;
-
-    /*IEnumerator DelayFunc()//Задержка для эффекта исчезновения надписи об успешном завершении операции
-    {
-        yield return new WaitForSeconds(2);
-    }*/
-    public void LoadFromMainMenu()//Вот тут какой-то затык надо разбираться снова
-    {
-        TrigerToContinueGame=(SaveScene.GetComponent<SaveGameScript>().TrigerToContinueGame);
-        Debug.Log(SaveScene.GetComponent<SaveGameScript>().TrigerToContinueGame);
-    }
 
     [System.Serializable]
     public class Position

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class PlayerGUI : MonoBehaviour
 {
     public GameObject Player;
@@ -9,6 +10,28 @@ public class PlayerGUI : MonoBehaviour
     public GameObject Saves;
     public GameObject СonfirmationExit;
     public bool Paused = false;
+
+
+   /* GameObject Triger;
+    public bool TrigerToLoad;
+
+    void SearchLoad()
+    {
+        Triger = GameObject.Find("LoadSavingController");
+        if (GameObject.Find("LoadSavingController") == true)
+        {
+            Debug.Log("Объект найден!!!");
+            TrigerToLoad = Triger.GetComponent<LoadSceneFromMenu>().TrigerToContinueGame;
+            Debug.Log(TrigerToLoad);
+        }
+        else Debug.Log("Объект не найден!!!");
+        if (TrigerToLoad == true)
+        {
+            GetComponent<SaveGameScript>().Load();
+        }
+    }*/
+
+
 
     public void openSaves()//Открытие меню сохранения
     {
@@ -21,6 +44,8 @@ public class PlayerGUI : MonoBehaviour
         Saves.SetActive(false);
         Menu.SetActive(true);
     }
+
+
 
     void Update()//Для паузы через escape
     {

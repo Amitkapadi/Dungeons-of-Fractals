@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 public class Menu : MonoBehaviour
 {
@@ -7,13 +9,51 @@ public class Menu : MonoBehaviour
     public GameObject buttonsExit;
     public GameObject AboutUsButtons;
     public GameObject Settings;
-    public GameObject LoadingScreen;
-    public GameObject LoadGame;
+    public GameObject LoadingScree;
+    public GameObject OnlineGame;
+    public GameObject NetworkManager;
+
+    GameObject Triger;
+    public bool TrigerToLoad;
+
+    void SearchLoad()
+    {
+        Triger = GameObject.Find("LoadSavingController");
+        if (GameObject.Find("LoadSavingController") == true)
+        {
+            Debug.Log("Объект найден!!!");
+            TrigerToLoad=Triger.GetComponent<LoadSceneFromMenu>().TrigerToContinueGame;
+            Debug.Log(TrigerToLoad);
+        }
+        else Debug.Log("Объект не найден!!!");
+        if (TrigerToLoad == true)
+        {
+            GetComponent<SaveGameScript>().Load();
+        }
+        else NewGameLoadScene();
+
+    }
+
+    public void OnlineGameMenuOn()
+    {
+        buttonsMenu.SetActive(false);
+        OnlineGame.SetActive(true);
+        NetworkManager.SetActive(true);
+    }
+
+    public void OnlineGameMenuOff()
+    {
+        buttonsMenu.SetActive(true);
+        OnlineGame.SetActive(false);
+        NetworkManager.SetActive(false);
+    }
+
 
     public void LoadingSaveGame()
     {
         buttonsMenu.SetActive(false);
-        LoadingScreen.SetActive(true);
+        LoadingScree.SetActive(true);
+        SearchLoad();
     } 
 
 
@@ -37,7 +77,7 @@ public class Menu : MonoBehaviour
     public void NewGameLoadScene()
     {
         buttonsMenu.SetActive(false);
-        LoadingScreen.SetActive(true);
+        LoadingScree.SetActive(true);
     }
 
     //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$

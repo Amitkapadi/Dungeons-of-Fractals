@@ -17,6 +17,7 @@ public class Clicktomove : MonoBehaviour
     
     void Update()
     {
+
             // keep track of the distance between this gameObject and destinationPosition
             destinationDistance = Vector3.Distance(destinationPosition, myTransform.position);
 
