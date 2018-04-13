@@ -10,28 +10,7 @@ public class PlayerGUI : MonoBehaviour
     public GameObject Saves;
     public GameObject СonfirmationExit;
     public bool Paused = false;
-
-
-   /* GameObject Triger;
-    public bool TrigerToLoad;
-
-    void SearchLoad()
-    {
-        Triger = GameObject.Find("LoadSavingController");
-        if (GameObject.Find("LoadSavingController") == true)
-        {
-            Debug.Log("Объект найден!!!");
-            TrigerToLoad = Triger.GetComponent<LoadSceneFromMenu>().TrigerToContinueGame;
-            Debug.Log(TrigerToLoad);
-        }
-        else Debug.Log("Объект не найден!!!");
-        if (TrigerToLoad == true)
-        {
-            GetComponent<SaveGameScript>().Load();
-        }
-    }*/
-
-
+    bool trigerToShutMenu = true;
 
     public void openSaves()//Открытие меню сохранения
     {
@@ -45,12 +24,29 @@ public class PlayerGUI : MonoBehaviour
         Menu.SetActive(true);
     }
 
-
-
     void Update()//Для паузы через escape
     {
-
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && Saves.activeInHierarchy == true)
+        {
+            trigerToShutMenu = false;
+            CloseSaves();
+        }
+        if (Input.GetKeyDown(KeyCode.Escape) && СonfirmationExit.activeInHierarchy == true)
+        {
+            trigerToShutMenu = false;
+            ExitOff();
+        }
+        if (Input.GetKeyDown(KeyCode.Escape) && СonfirmationExit.activeInHierarchy == true)
+        {
+            trigerToShutMenu = false;
+            ExitOff();
+        }
+        if (Input.GetKeyDown(KeyCode.Escape) && SettingsButton.activeInHierarchy == true)
+        {
+            trigerToShutMenu = false;
+            SettingsOff();
+        }
+        if (Input.GetKeyDown(KeyCode.Escape) && trigerToShutMenu==true)
         {
             if (Paused == false)
             {
@@ -65,6 +61,7 @@ public class PlayerGUI : MonoBehaviour
                 Menu.SetActive(false);
             }
         }
+        trigerToShutMenu = true;
     }
 
     public void PauseOff()
@@ -122,4 +119,9 @@ public class PlayerGUI : MonoBehaviour
         SettingsButton.SetActive(false);
     }
 
+    public void ExitOff()
+    {
+        СonfirmationExit.SetActive(false);
+        Menu.SetActive(true);
+    }
 }

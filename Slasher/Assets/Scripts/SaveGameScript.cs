@@ -18,6 +18,22 @@ public class SaveGameScript : MonoBehaviour
         public float Character_z;
     }
 
+    GameObject Triger;
+    public bool TrigerToLoad;
+
+    void Start()
+    { 
+        Triger = GameObject.Find("LoadSavingController");
+        if (GameObject.Find("LoadSavingController") == true)
+        {
+            TrigerToLoad = Triger.GetComponent<LoadSceneFromMenu>().TrigerToContinueGame;
+        }
+        if (TrigerToLoad == true)
+        {
+            Load();
+        }
+    }
+
     public void saving()
     {
         Position PositionCharacter=new Position();

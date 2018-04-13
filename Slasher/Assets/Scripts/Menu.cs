@@ -13,27 +13,6 @@ public class Menu : MonoBehaviour
     public GameObject OnlineGame;
     public GameObject NetworkManager;
 
-    GameObject Triger;
-    public bool TrigerToLoad;
-
-    void SearchLoad()
-    {
-        Triger = GameObject.Find("LoadSavingController");
-        if (GameObject.Find("LoadSavingController") == true)
-        {
-            Debug.Log("Объект найден!!!");
-            TrigerToLoad=Triger.GetComponent<LoadSceneFromMenu>().TrigerToContinueGame;
-            Debug.Log(TrigerToLoad);
-        }
-        else Debug.Log("Объект не найден!!!");
-        if (TrigerToLoad == true)
-        {
-            GetComponent<SaveGameScript>().Load();
-        }
-        else NewGameLoadScene();
-
-    }
-
     public void OnlineGameMenuOn()
     {
         buttonsMenu.SetActive(false);
@@ -53,7 +32,6 @@ public class Menu : MonoBehaviour
     {
         buttonsMenu.SetActive(false);
         LoadingScree.SetActive(true);
-        SearchLoad();
     } 
 
 

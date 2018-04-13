@@ -85,6 +85,83 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &213214808 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11468444, guid: 1842cb4bdb3f60d4e9c37def4809cda0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1421784445}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+--- !u!1 &450331664
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 183582, guid: 1842cb4bdb3f60d4e9c37def4809cda0, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 450331665}
+  - 222: {fileID: 450331667}
+  - 114: {fileID: 450331666}
+  m_Layer: 5
+  m_Name: TopBar (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &450331665
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 22457920, guid: 1842cb4bdb3f60d4e9c37def4809cda0,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 450331664}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 2079240661}
+  m_RootOrder: 1
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -229.69995, y: -369.95}
+  m_SizeDelta: {x: 1392, y: 320}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &450331666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11483096, guid: 1842cb4bdb3f60d4e9c37def4809cda0,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 450331664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.1764706, g: 0.1764706, b: 0.1764706, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 3ca845e003afba4419841bcd6bc0aff1, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 0
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &450331667
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 22245586, guid: 1842cb4bdb3f60d4e9c37def4809cda0,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 450331664}
 --- !u!1 &545004466
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,6 +418,38 @@ Prefab:
     - target: {fileID: 476212, guid: 1842cb4bdb3f60d4e9c37def4809cda0, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11492040, guid: 1842cb4bdb3f60d4e9c37def4809cda0, type: 2}
+      propertyPath: ProgressText
+      value: 
+      objectReference: {fileID: 213214808}
+    - target: {fileID: 11483096, guid: 1842cb4bdb3f60d4e9c37def4809cda0, type: 2}
+      propertyPath: m_FillAmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22458642, guid: 1842cb4bdb3f60d4e9c37def4809cda0, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 22434462, guid: 1842cb4bdb3f60d4e9c37def4809cda0, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11492040, guid: 1842cb4bdb3f60d4e9c37def4809cda0, type: 2}
+      propertyPath: Loading_Screen
+      value: 
+      objectReference: {fileID: 450331666}
+    - target: {fileID: 11483096, guid: 1842cb4bdb3f60d4e9c37def4809cda0, type: 2}
+      propertyPath: m_Color.r
+      value: 0.7607844
+      objectReference: {fileID: 0}
+    - target: {fileID: 11483096, guid: 1842cb4bdb3f60d4e9c37def4809cda0, type: 2}
+      propertyPath: m_Color.g
+      value: 0.7607844
+      objectReference: {fileID: 0}
+    - target: {fileID: 11483096, guid: 1842cb4bdb3f60d4e9c37def4809cda0, type: 2}
+      propertyPath: m_Color.b
+      value: 0.7607844
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1842cb4bdb3f60d4e9c37def4809cda0, type: 2}

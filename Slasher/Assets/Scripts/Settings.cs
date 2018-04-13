@@ -6,6 +6,9 @@ using UnityEngine.UI;
 public class Settings : MonoBehaviour
 {
     public Slider MainVolume;
+    public Dropdown QualityOfGame;
+    public Dropdown ResolutionOfGame;
+    public Toggle FullScreen;
     public void VolumeMainChange()
     {
         AudioListener.volume=MainVolume.value;
@@ -39,5 +42,11 @@ public class Settings : MonoBehaviour
     public void Quality(int q)//Для изменения качества графики
     {
         QualitySettings.SetQualityLevel(q);
+    }
+
+    void Update()
+    {
+        MainVolume.value = AudioListener.volume;
+        if (Screen.fullScreen == true) FullScreen.IsActive();
     }
 }

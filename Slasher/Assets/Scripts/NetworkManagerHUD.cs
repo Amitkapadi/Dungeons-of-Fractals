@@ -6,6 +6,7 @@ namespace UnityEngine.Networking
 	[AddComponentMenu("Network/NetworkManagerHUD")]
 	[RequireComponent(typeof(NetworkManager))]
 	[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
+
 	public class NetworkManagerHUD : MonoBehaviour
 	{
 		public NetworkManager manager;
