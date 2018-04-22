@@ -12,6 +12,8 @@ public class PlayerGUI : MonoBehaviour
     public bool Paused = false;
     bool trigerToShutMenu = true;
 
+    GameObject Triger;//Для удаления сохранения после выхода из игры
+
     public void openSaves()//Открытие меню сохранения
     {
         Menu.SetActive(false);
@@ -75,6 +77,11 @@ public class PlayerGUI : MonoBehaviour
     {
         Application.LoadLevel(1);
         Time.timeScale = 1;
+        Triger = GameObject.Find("LoadSavingController");
+        if (GameObject.Find("LoadSavingController") == true)
+        {
+            Destroy(GameObject.Find("LoadSavingController"));
+        }
         Paused = false;
     }
 
