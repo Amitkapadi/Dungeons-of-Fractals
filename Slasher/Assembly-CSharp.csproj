@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Clicktomove.cs" />
      <Compile Include="Assets\Scripts\CustomNetworkManagerGUI.cs" />
+     <Compile Include="Assets\Scripts\EnemyAIScript.cs" />
      <Compile Include="Assets\Scripts\Heal.cs" />
      <Compile Include="Assets\Scripts\Isometrycamera.cs" />
      <Compile Include="Assets\Scripts\LoadSceneFromMenu.cs" />
