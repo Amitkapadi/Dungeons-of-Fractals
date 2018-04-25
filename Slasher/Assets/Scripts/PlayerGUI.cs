@@ -8,7 +8,8 @@ public class PlayerGUI : MonoBehaviour
     public GameObject Menu;
     public GameObject SettingsButton;
     public GameObject Saves;
-    public GameObject СonfirmationExit;
+    public GameObject СonfirmationExitForMenu;
+    public GameObject ConfirmationForExitGame;
     public bool Paused = false;
     bool trigerToShutMenu = true;
 
@@ -33,15 +34,15 @@ public class PlayerGUI : MonoBehaviour
             trigerToShutMenu = false;
             CloseSaves();
         }
-        if (Input.GetKeyDown(KeyCode.Escape) && СonfirmationExit.activeInHierarchy == true)
+        if (Input.GetKeyDown(KeyCode.Escape) && СonfirmationExitForMenu.activeInHierarchy == true)
         {
             trigerToShutMenu = false;
-            ExitOff();
+            ExitOffMenu();
         }
-        if (Input.GetKeyDown(KeyCode.Escape) && СonfirmationExit.activeInHierarchy == true)
+        if (Input.GetKeyDown(KeyCode.Escape) && СonfirmationExitForMenu.activeInHierarchy == true)
         {
             trigerToShutMenu = false;
-            ExitOff();
+            ExitOffMenu();
         }
         if (Input.GetKeyDown(KeyCode.Escape) && SettingsButton.activeInHierarchy == true)
         {
@@ -73,7 +74,7 @@ public class PlayerGUI : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    public void СonfirmationYesMainMenu()//Выходим если да
+    public void СonfirmationYesMainMenu()//Выходим если да в меню
     {
         Application.LoadLevel(1);
         Time.timeScale = 1;
@@ -85,16 +86,16 @@ public class PlayerGUI : MonoBehaviour
         Paused = false;
     }
 
-    public void СonfirmationNoMainMenu()//Идём в сейв если нет
+    public void СonfirmationNoMainMenu()//Идём в сейв если нет из меню
     {
-        СonfirmationExit.SetActive(false);
+        СonfirmationExitForMenu.SetActive(false);
         Saves.SetActive(true);
-    }
+    } 
 
     public void EixtToMainMenu()//Выход в главное меню
     {
         Menu.SetActive(false);
-        СonfirmationExit.SetActive(true);
+        СonfirmationExitForMenu.SetActive(true);
     }
 
     public void СonfirmationYesQuitGame()
@@ -104,14 +105,14 @@ public class PlayerGUI : MonoBehaviour
 
     public void СonfirmationNoQuitGame()
     {
-        СonfirmationExit.SetActive(false);
+        ConfirmationForExitGame.SetActive(false);
         Saves.SetActive(true);
     }
 
     public void ExitFromGame()//Выход из игры
     {
         Menu.SetActive(false);
-        СonfirmationExit.SetActive(true);
+        ConfirmationForExitGame.SetActive(true);
     }
 
     public void SettingsOn()//Вкладка настроек
@@ -126,9 +127,15 @@ public class PlayerGUI : MonoBehaviour
         SettingsButton.SetActive(false);
     }
 
-    public void ExitOff()
+    public void ExitOffMenu()
     {
-        СonfirmationExit.SetActive(false);
+        СonfirmationExitForMenu.SetActive(false);
+        Menu.SetActive(true);
+    }
+
+    public void ExitOffQuit()
+    {
+        ConfirmationForExitGame.SetActive(false);
         Menu.SetActive(true);
     }
 }

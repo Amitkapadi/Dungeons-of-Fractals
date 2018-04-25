@@ -16,42 +16,20 @@ Platform assembly: C:\Users\neste\OneDrive\Документы\Unity Projects\Sla
 Loading C:\Users\neste\OneDrive\Документы\Unity Projects\Slasher\Builds\04.04.2018\Build 0.0.1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\neste\OneDrive\Документы\Unity Projects\Slasher\Builds\04.04.2018\Build 0.0.1_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\neste\OneDrive\Документы\Unity Projects\Slasher\Builds\04.04.2018\Build 0.0.1_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.080 seconds
+- Completed reload, in  0.094 seconds
 Platform assembly: C:\Users\neste\OneDrive\Документы\Unity Projects\Slasher\Builds\04.04.2018\Build 0.0.1_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\neste\OneDrive\Документы\Unity Projects\Slasher\Builds\04.04.2018\Build 0.0.1_Data\Managed\System.dll (this message is harmless)
 <RI> Initializing input.
 <RI> Input initialized.
-desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+desktop: 1920x1080 60Hz; virtual: 3200x1080 at 0,0
 <RI> Initialized touch support.
-UnloadTime: 0.760528 ms
+UnloadTime: 0.744700 ms
 Загрузка прошла!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 3f48 -> priority: 1 
-Загрузка прошла!!!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
-
-Загрузка прошла!!!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
-
-Загрузка прошла!!!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
-
-UnloadTime: 6.210042 ms
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 608.
-Total: 0.880710 ms (FindLiveObjects: 0.041580 ms CreateObjectMapping: 0.019315 ms MarkObjects: 0.808547 ms  DeleteObjects: 0.010730 ms)
-
-Загрузка прошла!!!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
-
+  Thread -> id: 2af4 -> priority: 1 
 Загрузка прошла!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
@@ -97,24 +75,194 @@ Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-UnloadTime: 0.711972 ms
-12
+Загрузка прошла!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-5
+UnloadTime: 6.137339 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 643.
+Total: 0.651344 ms (FindLiveObjects: 0.053652 ms CreateObjectMapping: 0.025216 ms MarkObjects: 0.559330 ms  DeleteObjects: 0.012340 ms)
+
+Загрузка прошла!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 1271.
-Total: 0.865151 ms (FindLiveObjects: 0.087990 ms CreateObjectMapping: 0.025753 ms MarkObjects: 0.636858 ms  DeleteObjects: 0.113743 ms)
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 2.311898 ms
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 615.
-Total: 1.787442 ms (FindLiveObjects: 0.060091 ms CreateObjectMapping: 0.022802 ms MarkObjects: 0.539478 ms  DeleteObjects: 1.163997 ms)
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Загрузка прошла!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
 Загрузка прошла!!!
  
@@ -157,26 +305,22 @@ Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-Загрузка прошла!!!
+UnloadTime: 0.845567 ms
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 940.
+Total: 0.979967 ms (FindLiveObjects: 0.058481 ms CreateObjectMapping: 0.029240 ms MarkObjects: 0.768307 ms  DeleteObjects: 0.122864 ms)
+
+75
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-UnloadTime: 0.563354 ms
-10
+75
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
-
-14
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
-
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 1171.
-Total: 0.818741 ms (FindLiveObjects: 0.065724 ms CreateObjectMapping: 0.027631 ms MarkObjects: 0.609227 ms  DeleteObjects: 0.115621 ms)
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 2.229809 ms
+UnloadTime: 2.134843 ms
 
-Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 615.
-Total: 1.693013 ms (FindLiveObjects: 0.056067 ms CreateObjectMapping: 0.026289 ms MarkObjects: 0.581596 ms  DeleteObjects: 1.027987 ms)
+Unloading 62 unused Assets to reduce memory usage. Loaded Objects now: 650.
+Total: 1.793611 ms (FindLiveObjects: 0.063041 ms CreateObjectMapping: 0.031655 ms MarkObjects: 0.571938 ms  DeleteObjects: 1.125903 ms)
 

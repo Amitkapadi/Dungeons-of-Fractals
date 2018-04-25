@@ -9,6 +9,7 @@ public class Settings : MonoBehaviour
     public Dropdown QualityOfGame;
     public Dropdown ResolutionOfGame;
     public Toggle FullScreen;
+
     public void VolumeMainChange()
     {
         AudioListener.volume=MainVolume.value;

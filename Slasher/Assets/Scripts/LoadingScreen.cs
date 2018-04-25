@@ -24,7 +24,7 @@ public class LoadingScreen : MonoBehaviour
             Loading_Screen.fillAmount = progress;
             //ProgressText.text = string.Format("(0:0)%", progress*100);
             Debug.Log("Загрузка прошла!!!");
-            ProgressText.text = progress * 100f + "%";
+            ProgressText.text = progress * 100 + "%";
             yield return null;
         }
     }
