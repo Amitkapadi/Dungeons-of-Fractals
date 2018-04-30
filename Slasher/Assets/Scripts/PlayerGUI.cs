@@ -29,6 +29,7 @@ public class PlayerGUI : MonoBehaviour
 
     void Update()//Для паузы через escape
     {
+        if (Time.timeScale == 0 && Paused==false) Time.timeScale = 1;
         if (Input.GetKeyDown(KeyCode.Escape) && Saves.activeInHierarchy == true)
         {
             trigerToShutMenu = false;
