@@ -1,0 +1,20 @@
+C:\Users\neste\Desktop\Тренировачные задачки по программированию\Гилберт и Серпинский\Гилберт и Серпинский\bin\Debug\Гилберт и Серпинский.exe.config
+C:\Users\neste\Desktop\Тренировачные задачки по программированию\Гилберт и Серпинский\Гилберт и Серпинский\obj\Debug\Гилберт_и_Серпинский.Form1.resources
+C:\Users\neste\Desktop\Тренировачные задачки по программированию\Гилберт и Серпинский\Гилберт и Серпинский\obj\Debug\Гилберт_и_Серпинский.Properties.Resources.resources
+C:\Users\neste\Desktop\Тренировачные задачки по программированию\Гилберт и Серпинский\Гилберт и Серпинский\obj\Debug\Гилберт и Серпинский.csproj.GenerateResource.Cache
+C:\Users\neste\Desktop\Тренировачные задачки по программированию\Гилберт и Серпинский\Гилберт и Серпинский\bin\Debug\Гилберт и Серпинский.exe
+C:\Users\neste\Desktop\Тренировачные задачки по программированию\Гилберт и Серпинский\Гилберт и Серпинский\bin\Debug\Гилберт и Серпинский.pdb
+C:\Users\neste\Desktop\Тренировачные задачки по программированию\Гилберт и Серпинский\Гилберт и Серпинский\obj\Debug\Гилберт и Серпинский.exe
+C:\Users\neste\Desktop\Тренировачные задачки по программированию\Гилберт и Серпинский\Гилберт и Серпинский\obj\Debug\Гилберт и Серпинский.pdb
+C:\Users\neste\Desktop\Тренировачные задачки по программированию\Гилберт и Серпинский\Гилберт и Серпинский\obj\Debug\Гилберт_и_Серпинский.AboutBox1.resources
+C:\Users\neste\Desktop\Тренировачные задачки по программированию\Гилберт и Серпинский\Гилберт и Серпинский\obj\Debug\Гилберт и Серпинский.csprojResolveAssemblyReference.cache
+C:\Users\neste\OneDrive\Документы\Unity Projects\Slasher\DebugProgram\Гилберт и Серпинский\bin\Debug\Гилберт и Серпинский.exe.config
+C:\Users\neste\OneDrive\Документы\Unity Projects\Slasher\DebugProgram\Гилберт и Серпинский\obj\Debug\Гилберт и Серпинский.exe
+C:\Users\neste\OneDrive\Документы\Unity Projects\Slasher\DebugProgram\Гилберт и Серпинский\obj\Debug\Гилберт и Серпинский.pdb
+C:\Users\neste\OneDrive\Документы\Unity Projects\Slasher\DebugProgram\Гилберт и Серпинский\bin\Debug\Гилберт и Серпинский.exe
+C:\Users\neste\OneDrive\Документы\Unity Projects\Slasher\DebugProgram\Гилберт и Серпинский\bin\Debug\Гилберт и Серпинский.pdb
+C:\Users\neste\OneDrive\Документы\Unity Projects\Slasher\DebugProgram\Гилберт и Серпинский\obj\Debug\Гилберт и Серпинский.csprojResolveAssemblyReference.cache
+C:\Users\neste\OneDrive\Документы\Unity Projects\Slasher\DebugProgram\Гилберт и Серпинский\obj\Debug\Гилберт_и_Серпинский.AboutBox1.resources
+C:\Users\neste\OneDrive\Документы\Unity Projects\Slasher\DebugProgram\Гилберт и Серпинский\obj\Debug\Гилберт_и_Серпинский.Form1.resources
+C:\Users\neste\OneDrive\Документы\Unity Projects\Slasher\DebugProgram\Гилберт и Серпинский\obj\Debug\Гилберт_и_Серпинский.Properties.Resources.resources
+C:\Users\neste\OneDrive\Документы\Unity Projects\Slasher\DebugProgram\Гилберт и Серпинский\obj\Debug\Гилберт и Серпинский.csproj.GenerateResource.Cache
