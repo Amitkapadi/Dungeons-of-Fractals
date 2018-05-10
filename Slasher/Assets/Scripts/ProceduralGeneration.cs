@@ -15,50 +15,57 @@ public class ProceduralGeneration : MonoBehaviour
     int DirectOrderGilbert = 0;//порядок кривой Гилбрета
     int DirectOrderSerpinskiy = 0;//Порядок кривой Серпинского
     int CountOfIterations = 0;//Рандомное кол-во вызовов отрисовки 
-
+    bool DrawType=false;//Так как меняется порядок кривой в зависимости от отрисовывании
+    int DeltaForDrawingX=0,DeltaForDrawingZ=0;//Перемнная для различного прироста для разных кривых
     //Функция построения никога в жизни больше не открою вот это 
     void DrawPart(int Delta_X, int Delta_Z)
-    {
+    {   
+        if(DrawType==false)//Если false следовательно рисуем Гилберта
+        {
+            DeltaForDrawingX=Delta_X_Gilbert;
+            DeltaForDrawingZ=Delta_Z_Gilbert;
+        }
+        else//Если true следовательено рисуем Серпинского
+        {
+            DeltaForDrawingX=Delta_X_Serpinskiy;
+            DeltaForDrowingZ=Delta_Z_Serpinskiy;
+        }
         if (Delta_Z == 0 && Delta_X < 0)
         {
-                for (int i_X_Coordinate = X_Coordinate; i_X_Coordinate > X_Coordinate - Delta_X_Gilbert; i_X_Coordinate--)
+                for (int i_X_Coordinate = X_Coordinate; i_X_Coordinate > X_Coordinate - DeltaForDrawingX; i_X_Coordinate--)
                 {
                     GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
                     cube.transform.position = new Vector3(i_X_Coordinate, Y_Coordinate, Z_Coordinate);
                 }
-                X_Coordinate = X_Coordinate - Delta_X_Gilbert;
+                X_Coordinate = X_Coordinate - DeltaForDrawingX;
         }
         if (Delta_Z == 0 && Delta_X > 0) 
         {
-                for (int i_X_Coordinate = X_Coordinate; i_X_Coordinate < X_Coordinate + Delta_X_Gilbert; i_X_Coordinate++)
+                for (int i_X_Coordinate = X_Coordinate; i_X_Coordinate < X_Coordinate + DeltaForDrawingX; i_X_Coordinate++)
                 {
                     GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
                     cube.transform.position = new Vector3(i_X_Coordinate, Y_Coordinate, Z_Coordinate);
                 }
-                X_Coordinate = X_Coordinate + Delta_X_Gilbert;
+                X_Coordinate = X_Coordinate + DeltaForDrawingX;
         }
         if (Delta_X == 0 && Delta_Z < 0)
         {
-            for (int i_Z_Coordinate = Z_Coordinate; i_Z_Coordinate > Z_Coordinate - Delta_Z_Gilbert; i_Z_Coordinate--)
+            for (int i_Z_Coordinate = Z_Coordinate; i_Z_Coordinate > Z_Coordinate - DeltaForDrawingZ; i_Z_Coordinate--)
             {
                 GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
                 cube.transform.position = new Vector3(X_Coordinate, Y_Coordinate, i_Z_Coordinate);
             }
-            Z_Coordinate = Z_Coordinate - Delta_Z_Gilbert;
+            Z_Coordinate = Z_Coordinate - DeltaForDrawingZ;
         }
         if (Delta_X == 0 && Delta_Z > 0) 
         {
-            for (int i_Z_Coordinate = Z_Coordinate; i_Z_Coordinate < Z_Coordinate + Delta_Z_Gilbert; i_Z_Coordinate++)
+            for (int i_Z_Coordinate = Z_Coordinate; i_Z_Coordinate < Z_Coordinate + DeltaForDrawingZ; i_Z_Coordinate++)
             {
                 GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
                 cube.transform.position = new Vector3(X_Coordinate, Y_Coordinate, i_Z_Coordinate);
             }
-            Z_Coordinate = Z_Coordinate + Delta_Z_Gilbert;
+            Z_Coordinate = Z_Coordinate + DeltaForDrawingZ;
         }
-
-        //Тест работаспособности
-
-
     }
 
     //Рекурсивные функции для кривой Гилберта
@@ -197,15 +204,19 @@ public class ProceduralGeneration : MonoBehaviour
             RandomMove = Random.Range(0, 1) == 0 ? false : true;//При каждой итерации отрисовка меняет свой порядок(тут порядок в значении последовательности)
             switch (RandomMove)
             {
+                //Если первой будем отрисовывать Гилберта
                 case true:
+                    DrawType=false;
                     function_drawing_Gilbert_1(DirectOrderGilbert);
+                    DrawType=true;
                     function_drawing_Serpinskiy_1(DirectOrderSerpinskiy);
-                    function_drawing_Gilbert_1(DirectOrderGilbert);
                     break;
+                //Если первый будет Серпинский
                 case false:
+                    DrawType=true;
                     function_drawing_Serpinskiy_1(DirectOrderSerpinskiy);
+                    DrawType=false;
                     function_drawing_Gilbert_1(DirectOrderGilbert);
-                    function_drawing_Serpinskiy_1(DirectOrderSerpinskiy);
                     break;
             }
         }
