@@ -3,8 +3,7 @@ using System.Collections;
 
 public class ProceduralGeneration : MonoBehaviour
 {
-    public Transform SimpleWall;//Для префаба обычной стены вправо
-    public Transform WallOut;//Для префаба стены прохода между комнатами
+    public Transform Brick;//Для префаба обычной стены 
 
     public int X_Coordinate = 0;//Начальная координата X
     public int Y_Coordinate = 0;//Начальная координата Y
@@ -17,6 +16,7 @@ public class ProceduralGeneration : MonoBehaviour
     int CountOfIterations = 0;//Рандомное кол-во вызовов отрисовки 
     bool DrawType=false;//Так как меняется порядок кривой в зависимости от отрисовывании
     int DeltaForDrawingX=0,DeltaForDrawingZ=0;//Перемнная для различного прироста для разных кривых
+    int ThicknessOfCorridor=10;
     //Функция построения никога в жизни больше не открою вот это 
     void DrawPart(int Delta_X, int Delta_Z)
     {   
@@ -28,42 +28,30 @@ public class ProceduralGeneration : MonoBehaviour
         else//Если true следовательено рисуем Серпинского
         {
             DeltaForDrawingX=Delta_X_Serpinskiy;
-            DeltaForDrowingZ=Delta_Z_Serpinskiy;
+            DeltaForDrawingZ=Delta_Z_Serpinskiy;
         }
         if (Delta_Z == 0 && Delta_X < 0)
         {
-                for (int i_X_Coordinate = X_Coordinate; i_X_Coordinate > X_Coordinate - DeltaForDrawingX; i_X_Coordinate--)
-                {
-                    GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-                    cube.transform.position = new Vector3(i_X_Coordinate, Y_Coordinate, Z_Coordinate);
-                }
-                X_Coordinate = X_Coordinate - DeltaForDrawingX;
+            Brick.transform.localScale = new Vector3(DeltaForDrawingX,1,ThicknessOfCorridor);
+            Instantiate(Brick, new Vector3(X_Coordinate-DeltaForDrawingX/2, Y_Coordinate, Z_Coordinate),Quaternion.identity);
+            X_Coordinate = X_Coordinate - DeltaForDrawingX;
         }
         if (Delta_Z == 0 && Delta_X > 0) 
         {
-                for (int i_X_Coordinate = X_Coordinate; i_X_Coordinate < X_Coordinate + DeltaForDrawingX; i_X_Coordinate++)
-                {
-                    GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-                    cube.transform.position = new Vector3(i_X_Coordinate, Y_Coordinate, Z_Coordinate);
-                }
-                X_Coordinate = X_Coordinate + DeltaForDrawingX;
+            Brick.transform.localScale = new Vector3(DeltaForDrawingX,1,ThicknessOfCorridor);
+            Instantiate(Brick, new Vector3(X_Coordinate+DeltaForDrawingX/2, Y_Coordinate, Z_Coordinate+ThicknessOfCorridor/2),Quaternion.identity);
+            X_Coordinate = X_Coordinate + DeltaForDrawingX;
         }
         if (Delta_X == 0 && Delta_Z < 0)
         {
-            for (int i_Z_Coordinate = Z_Coordinate; i_Z_Coordinate > Z_Coordinate - DeltaForDrawingZ; i_Z_Coordinate--)
-            {
-                GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-                cube.transform.position = new Vector3(X_Coordinate, Y_Coordinate, i_Z_Coordinate);
-            }
+            Brick.transform.localScale = new Vector3(ThicknessOfCorridor,1,DeltaForDrawingZ);
+            Instantiate(Brick, new Vector3(X_Coordinate-Delta_X, Y_Coordinate, Z_Coordinate-DeltaForDrawingZ/2), Quaternion.identity);
             Z_Coordinate = Z_Coordinate - DeltaForDrawingZ;
         }
         if (Delta_X == 0 && Delta_Z > 0) 
         {
-            for (int i_Z_Coordinate = Z_Coordinate; i_Z_Coordinate < Z_Coordinate + DeltaForDrawingZ; i_Z_Coordinate++)
-            {
-                GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-                cube.transform.position = new Vector3(X_Coordinate, Y_Coordinate, i_Z_Coordinate);
-            }
+            Brick.transform.localScale = new Vector3(ThicknessOfCorridor,1,DeltaForDrawingZ);
+            Instantiate(Brick, new Vector3(X_Coordinate+ThicknessOfCorridor/2, Y_Coordinate, Z_Coordinate+DeltaForDrawingZ/2), Quaternion.identity);
             Z_Coordinate = Z_Coordinate + DeltaForDrawingZ;
         }
     }
@@ -185,23 +173,33 @@ public class ProceduralGeneration : MonoBehaviour
             function_drawing_Serpinskiy_4(i - 1);
         }
     }
+
+    int ParityСheck(int Verifiable,int StartRange,int FinishRange)//Функция для получения рандомных чётных координат
+    {
+        Verifiable=Random.Range(StartRange,FinishRange);
+        while(Verifiable%2!=0)Verifiable=Random.Range(StartRange,FinishRange);
+        return Verifiable;
+    }
     
     //Основная функция 
     void Start()
     {
         Random Rand = new Random();
         //Делаем случаным всё что можем
-        Delta_X_Gilbert = Random.Range(5, 20);
-        Delta_Z_Gilbert = Random.Range(5, 20);
-        Delta_X_Serpinskiy = Random.Range(5, 20);
-        Delta_Z_Serpinskiy = Random.Range(5, 20);
+        Delta_X_Gilbert = ParityСheck(Delta_X_Gilbert,20,30);
+        Delta_Z_Gilbert = ParityСheck(Delta_Z_Gilbert,20,30);
+        Delta_X_Serpinskiy = ParityСheck(Delta_X_Serpinskiy,20,30);
+        Delta_Z_Serpinskiy = ParityСheck(Delta_Z_Serpinskiy,20,30);
+        //Delta_X_Gilbert=Delta_Z_Gilbert=Delta_X_Serpinskiy=Delta_Z_Serpinskiy=20;
         DirectOrderGilbert = Random.Range(2, 3);
         DirectOrderSerpinskiy=Random.Range(1,2);
-        CountOfIterations = Random.Range(1, 3);
+        CountOfIterations = Random.Range(1, 4);
         bool RandomMove = false;//Определение рандомного порядка отрисовки кривых
         for (int i = 0; i < CountOfIterations; i++)
         {
             RandomMove = Random.Range(0, 1) == 0 ? false : true;//При каждой итерации отрисовка меняет свой порядок(тут порядок в значении последовательности)
+            DirectOrderGilbert = Random.Range(1,3);
+            DirectOrderSerpinskiy=Random.Range(1,3);
             switch (RandomMove)
             {
                 //Если первой будем отрисовывать Гилберта
